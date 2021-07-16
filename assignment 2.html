@@ -1,0 +1,52 @@
+<a href=home.html > Home </a> |
+<a href=about.html > About </a> |
+<a href=register.html > Register </a> |
+<a href=contact.html > Contact </a> |
+<a href=login.html > Login </a> |
+<a href=show.html > Show </a> 
+
+<br><br>
+<h1>Registration</h1>
+<br>
+<br>
+<table border=0 >
+<tr> <th> User Id : <th> <input id=Userid >
+<tr> <th> Name : <th> <input id=Name>
+<tr> <th> Password : <th> <input type=password id=Password >
+<tr> <th> Email Id : <th> <input id=Email>
+<tr> <th> Contact : <th> <input id=Contact>
+<tr> <th> Address : <th> <input id=Address >
+<tr> <th> Date of Birth : <th> <input type=date id=DOB>
+<tr> <th> Country : <th> <select id=t1 > <option> India </option><option> Australia </option><option> China </option> </select>
+<tr> <td>  <td> <input type=button value=Register onclick=xyz()>
+</table>
+<p id=p1 ></p>
+<script>
+
+function xyz()
+{
+a=Userid.value
+b=Name.value
+c=Password.value
+d=Email.value
+e=Contact.value
+f=Address.value
+g=DOB.value
+f=t1.value
+
+
+
+x="<table border=0>" 
+
+x=x + "<tr><th>User Id - <td>" +a
+x=x + "<tr><th>Name - <td>" +b
+x=x + "<tr><th>Password - <td>" +c
+x=x + "<tr><th>Email - <td>" +d
+x=x + "<tr><th>Contact - <td>" +e
+x=x + "<tr><th>Address - <td>" +f
+x=x + "<tr><th>DOB - <td>" +g
+x=x + "<tr><th>Country - <td>" +f
+
+p1.innerHTML=x
+}
+</script>
